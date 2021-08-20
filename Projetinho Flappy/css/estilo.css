@@ -24,32 +24,3 @@ body {
     align-items: center;
     min-height: 100%;
 }
-
-.exercicio div {
-    font-size: 3em;
-    border: solid 5px #fff;
-    padding: 20px 40px;
-    margin: 10px;
-}
-
-.exercicio div:nth-of-type(1) {
-    background-color: darkgoldenrod;
-}
-
-.exercicio div:nth-of-type(2) {
-    background-color: crimson;
-}
-
-.exercicio div:nth-of-type(3) {
-    background-color: darkcyan;
-}
-
-.exercicio div:nth-of-type(4) {
-    background-color: darkorchid;
-}
-
-.exercicio .destaque {
-    border: solid 10px greenyellow;
-    color: greenyellow;
-    font-weight: bold;
-}
