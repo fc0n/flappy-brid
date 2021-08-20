@@ -9,12 +9,13 @@
 
 [wm-flappy] {
     position: relative;
-    border: 5px solid dodgerblue;
+    border: 7px solid dodgerblue;
     height: 700px;
     width: 1200px;
     margin: 15px;
     background: url("../imgs/bg.jpeg")center center;
     background-size: cover;
+    background-color: deepskyblue;
     overflow: hidden;
 }
 
@@ -24,7 +25,7 @@
 
 .passaro {
     position: absolute;
-    width: 50px;
+    width: 75px;
     left: calc(50% - 30px); 
 }
 
