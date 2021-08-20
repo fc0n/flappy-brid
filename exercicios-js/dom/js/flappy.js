@@ -1,12 +1,8 @@
-const som_HIT = new Audio()
-som_HIT.src = './efeitos/hit.wav'
-
 function novoElemento(tagName, className) {
     const elem = document.createElement(tagName)
     elem.className = className
     return elem
 }
-
 
 function Barreira(reversa = false) {
     this.elemento = novoElemento('div', 'barreira')
@@ -86,7 +82,7 @@ function Passaro(alturaJogo) {
     this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0])
     this.setY = y => this.elemento.style.bottom = `${y}px`
 
-    window.onkeydown = e => voando = true
+    window.onkeydown = e => voando = true 
     window.onkeyup = e => voando = false
 
     this.animar = () => {
@@ -147,7 +143,6 @@ function colidiu(passaro, barreiras) {
                 || estaoSobrepostos(passaro.elemento, inferior)
         }
     })
-    som_HIT.play()
     return colidiu
 }
 
@@ -180,7 +175,7 @@ function FlappyBird() {
     }
 }
 
-
-
 new FlappyBird().start()
+
+
 
