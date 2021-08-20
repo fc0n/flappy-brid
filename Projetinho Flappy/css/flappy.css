@@ -16,7 +16,7 @@
     /*
         BACKGROUND: [URL DA IMAGE] [OPÇÃO INFORMANDO QUE SE A IMAGEM FOR MENOR NÃO É PARA ELA REPETIR] [CENTRALIZAR VERTICALMENTE E HORIZONTALMENTE]
     */
-    background: url("../imgs/unnamed.png") no-repeat center;
+    background: url("../imgs/fundo.png") no-repeat center;
     /*
         BACKGROUND-SIZE: [OPÇÃO FALANDO QUE O TAMANHO DO FUNDO DEVE SER COBERTO TUDO QUE POSSIVEL, POR ISSO "COVER"]
     */
