@@ -147,6 +147,7 @@ function colidiu(passaro, barreiras) {
                 || estaoSobrepostos(passaro.elemento, inferior)
                 
         }
+
     })
     
     
@@ -180,6 +181,11 @@ function FlappyBird() {
 
     this.start = () => {
         // loop do jogo
+        // Assim que inicia o jogo eu seto a variavel como true;
+        let gameElement = document.getElementById("game-container")
+
+        gameElement.classList.add("playOn")
+
         const temporizador = setInterval(() => {
             barreiras.animar()
             passaro.animar()
@@ -190,6 +196,8 @@ function FlappyBird() {
                 gameOver(areaDoJogo)
 
                 som_HIT.play()
+
+                gameElement.classList.remove("playOn")
 
                 window.onkeydown = e => window.location.reload()
             }
