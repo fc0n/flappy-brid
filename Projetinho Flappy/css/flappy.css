@@ -13,7 +13,14 @@
     height: 700px;
     width: 1200px;
     margin: 15px;
-    background-color: deepskyblue;
+    /*
+        BACKGROUND: [URL DA IMAGE] [OPÇÃO INFORMANDO QUE SE A IMAGEM FOR MENOR NÃO É PARA ELA REPETIR] [CENTRALIZAR VERTICALMENTE E HORIZONTALMENTE]
+    */
+    background: url("../imgs/bg.jpeg") no-repeat center center;
+    /*
+        BACKGROUND-SIZE: [OPÇÃO FALANDO QUE O TAMANHO DO FUNDO DEVE SER COBERTO TUDO QUE POSSIVEL, POR ISSO "COVER"]
+    */
+    background-size: cover;
     overflow: hidden;
 }
 
