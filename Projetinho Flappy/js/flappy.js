@@ -180,6 +180,10 @@ function FlappyBird() {
 
     this.start = () => {
         // loop do jogo
+       let gameElement = document.getElementById("container")
+
+       gameElement.classList.add("playOn")
+
         const temporizador = setInterval(() => {
             barreiras.animar()
             passaro.animar()
@@ -190,6 +194,8 @@ function FlappyBird() {
                 gameOver(areaDoJogo)
 
                 som_HIT.play()
+ 
+                gameElement.classList.remove("playOn")
 
                 window.onkeydown = e => window.location.reload()
             }
