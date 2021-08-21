@@ -180,7 +180,7 @@ function FlappyBird() {
 
     this.start = () => {
         // loop do jogo
-       let gameElement = document.getElementById("container")
+       let gameElement = document.getElementById("game-container")
 
        gameElement.classList.add("playOn")
 
